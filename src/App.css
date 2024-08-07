@@ -1,0 +1,31 @@
+/* src/styles.css */
+body {
+  background-color: #3E1F4E;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.image-item {
+  margin-bottom: 30px;
+}
+
+footer {
+  padding-top: 2rem;
+  color: crimson;
+  font-weight: bold;
+}
