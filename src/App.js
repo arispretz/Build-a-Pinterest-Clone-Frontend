@@ -10,7 +10,6 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Fetch user data from the server
     fetch('/auth/user')
       .then(res => {
         if (!res.ok) {
@@ -20,7 +19,7 @@ function App() {
       })
       .then(user => setUser(user))
       .catch(err => console.error('Error fetching user:', err));
-  }, []); // El array vacío asegura que esto solo se ejecute una vez al montar el componente
+  }, []);
 
   return (
     <Router>

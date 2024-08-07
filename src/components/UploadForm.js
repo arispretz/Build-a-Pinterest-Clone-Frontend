@@ -15,7 +15,6 @@ const UploadForm = () => {
       .then(res => res.json())
       .then(data => {
         setUrl('');
-        // Opcional: actualizar el estado de imágenes en el componente padre
       })
       .catch(err => console.error(err));
   };

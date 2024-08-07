@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageCard = ({ image }) => {
   const handleBrokenImage = (event) => {
-    event.target.src = '/placeholder-image.png'; // Ruta a la imagen de placeholder
+    event.target.src = '/placeholder-image.png';
   };
 
   return (
@@ -13,7 +13,6 @@ const ImageCard = ({ image }) => {
         onError={handleBrokenImage}
       />
       <div className="image-card-overlay">
-        {/* Opcional: agregar botones para eliminar la imagen si el usuario está autenticado */}
       </div>
     </div>
   );
